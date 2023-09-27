@@ -1,0 +1,241 @@
+/*Resete geral pra todas as medias 769px pra cima*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Source Sans 3', sans-serif;
+}
+body{
+        background-color: #ebeaea;
+    }
+header, main, footer{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: white;
+}
+h3,h2{
+    margin-bottom: 15px;
+}
+header .cabecalho{
+    width: 100%;
+    background-color: #00CAD1;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cabecalho img{
+    margin-top: 5px;
+    width: 110px;
+}
+.cabecalho nav{
+    width: 300px;
+}
+.cabecalho nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cabecalho nav li a{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+}
+.cabecalho nav a:hover{
+    border-bottom:2px solid #D8423C;
+}
+/*Seção banner/ imagem de fundo*/
+section.banner{
+    width: 100%;
+    height: 400px;
+    background: url(../img/banner/recepcao.png) no-repeat  center;
+    background-size: cover;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.banner h1{
+    font-size: 34px;
+    font-weight: 400;
+}
+/*Fim da seção banner*/
+/*SOBRE A CLÍNICA*/
+section#sobre{
+    width: 100%;
+    padding: 40px 10px 0px;
+    text-align: center;
+}
+#sobre .a-clinica{
+    padding: 5px 0;
+}
+article:first-child{
+    margin: auto;
+    margin-bottom: 15px;
+    max-width: 600px;
+}
+.a-clinica article:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-clinica article:last-child ul{
+    text-align: left;
+    margin-left: 40px;
+}
+#sobre .especialidades{
+    padding: 30px 0;
+}
+.especialidades .img-especialidades{
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.img-especialidades div{
+    background-color: white;
+    width: calc((100% / 3) - 40px);
+    margin: 10px 0px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 4px #00000027;
+}
+.img-especialidades div img{
+    width: 100%;
+    border-radius: 4px 40px 0px;
+}
+.img-especialidades div p{
+    padding: 10px;
+    font-weight: 500;
+}
+.especialidades a{
+    border: none;
+    background-color: #00C9D2;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.especialidades a:hover{
+    background-color: #04aeb4;
+    transition: .4s;
+}
+.especialidades a:active{
+    background-color: #D8423C;
+}
+/*Fim da seção sebre*/
+
+/*Seção Contato*/
+section#contatos{
+    padding: 40px 10px;
+    text-align: center;
+}
+#contatos article p{
+    margin-bottom: 15px;
+}
+#contatos section.iframe{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    padding: 0px 10px;
+}
+.iframe iframe{
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 2px #0000004f;
+}
+/*Fim da seção contato*/
+
+/*Seção rodapé*/
+footer{
+    background-color: #0C6E71;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer img{
+    width: 130px;
+}
+footer p{
+    line-height: 38px;
+    font-weight: 400;
+}
+/*Fim da seção rodapé*/
+
+/*Página 2*/
+main section.pag2-especialidades{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    text-align: center;
+}
+.pag2-especialidades nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.pag2-especialidades nav a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 0px;
+    border-bottom: 2px solid #00CAD1;
+}
+.pag2-especialidades h2{
+    margin-top: 25px;
+}
+.padrao section.texto-explicativo{
+    max-width: 550px;
+    padding: 0px 10px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.padrao article{
+    padding: 0px 20px;
+    height: 250px;
+    padding-bottom: 30px;
+    display: flex;
+}
+.padrao article img{
+    width: 300px;
+}
+.padrao article table{
+    width: 769px;
+    text-align: left;
+    border-collapse: collapse;
+}
+article table thead th{
+    background-color: #00CBD3;
+    color: white;
+    padding: 10px 10px;
+}
+article table tbody td{
+    padding: 0px 10px;
+}
+
+article table tbody tr:nth-child(even){
+    background-color: #F9F9FB;
+}
+
+article table tbody tr:nth-child(odd){
+    background-color:#CDCDCD;
+}
+#fisioterapia{
+    padding-bottom: 50px;
+}
+/*Fim do Resete geral pra todas as medias*/
